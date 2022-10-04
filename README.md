@@ -122,7 +122,7 @@ You have made it till the end. Kudos to you!!
 
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/geekquad"><img alt="" src="https://avatars.githubusercontent.com/anadee11" width="100px;"><br><sub><b>Anadee</b></sub></a><br><a href="https://github.com/anadee11" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/anadee11"><img alt="" src="https://avatars.githubusercontent.com/anadee11" width="100px;"><br><sub><b>Anadee</b></sub></a><br><a href="https://github.com/anadee11" title="Code">💻 🖋</a></td> </a></td>
   </tr>
 </tbody></table>
 <hr>
