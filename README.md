@@ -23,6 +23,13 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
 ## <u> Let's Get Started: </u>
 
+### Issue Creation
+- Create an issue or if you want to work on an exisiting issue get it assigned to you first.
+- **No PR's shall be accepted without issues been assigned.**
+- Now, when you have got your issue assigned follow the steps below :
+
+
+
 ### Step 1. Create a Copy of this Repository
 In order to work on an open-source project, you will first need to make your own copy of the repository. To do this, you should fork the repository and then clone it so that you have a local working copy.
 
