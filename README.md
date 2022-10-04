@@ -112,7 +112,7 @@ You have made it till the end. Kudos to you!!
 * Upload your folders with the corresponding files and a readme.md file.
 * **Under no circumstances create new folders or directly upload files within the folders of other projects.**
 
-#### Please see the <a href="https://github.com/Anadee11/WebArena/blob/main/Contributing.md"> **Contributing Guidelines** </a>.
+#### Please see the <a href="https://github.com/Anadee11/WebArena/blob/main/CONTRIBUTING.md"> **Contributing Guidelines** </a>.
 
 <hr> </hr>
 
