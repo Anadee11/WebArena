@@ -1,0 +1,182 @@
+.mediaViewInfo {
+    --web-view-name: Signup;
+    --web-view-id: Signup;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Signup;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Signup {
+    position: absolute;
+    width: 1280px;
+    height: 640px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Signup;
+    --web-view-id: Signup;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Sign-up {
+    left: 923px;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 255px;
+    height: 67px;
+    text-align: left;
+    font-family: Ravie;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(218,149,28,1);
+}
+#cool5 {
+    position: absolute;
+    width: 853px;
+    height: 640px;
+    left: -54px;
+    top: 0px;
+    overflow: visible;
+}
+#Screenshot__1544_-removebg-pre {
+    position: absolute;
+    width: 140px;
+    height: 101px;
+    left: 0px;
+    top: 11px;
+    overflow: visible;
+}
+
+.Rectangle_1{
+    position: absolute;
+    overflow: visible;
+    left: 861px;
+    top: 153px;
+}
+
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    left: 861px;
+    top: 239px;
+}
+
+.Rectangle_3 {
+    position: absolute;
+    overflow: visible;
+    left: 861px;
+    top: 325px;
+}
+
+.Rectangle_4 {
+    position: absolute;
+    overflow: visible;
+    left: 861px;
+    top: 411px;
+}
+
+.Rectangle_1 input, .Rectangle_2 input, .Rectangle_3 input ,.Rectangle_4 input{
+    width: 378px;
+    height: 53px;
+	align-items: center;
+	padding-left: 15px;
+	font-size: 17px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#Already_a_member_Sign_in_now {
+    left: 882px;
+    top: 569px;
+    position: absolute;
+    overflow: visible;
+    width: 336px;
+    height: 35px;
+    text-align: left;
+    font-family: Segoe Print;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+
+#Submit button{
+    left: 861px;
+    top: 501px;
+    position: absolute;
+    overflow: visible;
+    width: 378px;
+    height: 53px;
+    text-align: center;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    background-color: #878032;
+    color: rgba(255,255,255,1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Already_a_member_Sign_in_now a{
+    text-decoration: none;
+    color: rgb(219, 109, 18);
+}
+
+#Already_a_member_Sign_in_now a:hover{
+    color: rgba(145,57,33,1);
+}
+
+.formlabel{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75px;
+    transition: top .3s ;
+    padding: 0 5px;
+    color: rgb(146, 146, 146);
+}
+.forminput:focus~.formlabel,.forminput:not(:placeholder-shown).forminput:not(:focus)~.formlabel{
+    top: -9px;
+    background-color: white;
+    color: black;
+}
+
+.formlabeluser{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 90px;
+    transition: top .3s ;
+    padding: 0 5px;
+    color: rgb(146, 146, 146);
+}
+.forminputuser:focus~.formlabeluser,.forminputuser:not(:placeholder-shown).forminputuser:not(:focus)~.formlabeluser{
+    top: -9px;
+    background-color: white;
+    color: black;
+}
+
+
+.formlabelmobile{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 120px;
+    transition: top .3s ;
+    padding: 0 5px;
+    color: rgb(146, 146, 146);
+}
+.forminputmobile:focus~.formlabelmobile,.forminputmobile:not(:placeholder-shown).forminputmobile:not(:focus)~.formlabelmobile{
+    top: -9px;
+    background-color: white;
+    color: black;
+}

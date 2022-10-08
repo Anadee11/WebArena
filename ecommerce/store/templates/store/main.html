@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+           <title>Ecom</title>
+           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+           <link rel="stylesheet" type="text/css" href="{% static 'CSS/main.css' %}">
+</head>
+     <body>
+      <div id="Aesthetic_Town">
+        <svg class="Line_1" viewBox="0 0 1227 1">
+          <path id="Line_1" d="M 0 0 L 1227 1">
+          </path>
+        </svg>
+        <div id="Group_8">
+          <svg class="Path_1429" viewBox="60.536 400.232 2667.731 301.41">
+            <path id="Path_1429" d="M 2728.26708984375 568.597900390625 C 2728.26708984375 568.597900390625 2602.7978515625 370.75927734375 2393.9013671875 403.9952087402344 C 2185.0048828125 437.2311096191406 2115.9912109375 701.54150390625 1892.68115234375 701.54150390625 C 1669.37109375 701.54150390625 1769.338623046875 403.9952087402344 1500.6611328125 403.9952087402344 C 1231.983276367188 403.9952087402344 1088.784301757813 695.94384765625 817.9705810546875 701.54150390625 C 547.15673828125 707.13916015625 606.76416015625 477.3606872558594 417.40576171875 426.3857727050781 C 228.047119140625 375.4108276367188 60.5361328125 497.6418762207031 60.5361328125 497.6418762207031">
+            </path>
+          </svg>
+          <svg class="Path_1430" viewBox="60.536 400.232 2122.255 368.232">
+            <path id="Path_1430" d="M 2182.79150390625 534.1718139648438 C 2182.79150390625 534.1718139648438 2082.977294921875 376.7855834960938 1916.794311523438 403.2257080078125 C 1750.611206054688 429.6658325195313 1695.708862304688 639.9322509765625 1518.059326171875 639.9322509765625 C 1340.409790039063 639.9322509765625 1419.936889648438 403.2257080078125 1206.1962890625 403.2257080078125 C 992.4555053710938 403.2257080078125 887.3548583984375 763.963134765625 671.914794921875 768.4161987304688 C 456.4747314453125 772.8692626953125 495.0760192871094 461.5900268554688 344.4359436035156 421.0380554199219 C 193.7958831787109 380.4860534667969 60.53613662719727 477.7242431640625 60.53613662719727 477.7242431640625">
+            </path>
+          </svg>
+        </div>
+        <svg class="Ellipse_178">
+          <ellipse id="Ellipse_178" rx="329" ry="310" cx="329" cy="310">
+          </ellipse>
+        </svg>
+        <div id="Empowering_Growth" class="fade-in">
+          <span>Empowering Growth,</span>
+        </div>
+        <div id="Lifestyle__Wellness" class="fade-in">
+          <span>Lifestyle & Wellness.</span>
+        </div>
+        <img id="img" class="fade-in" src="{% static 'images/img.png' %}">
+        
+        <img id="logo" src="{% static 'images/Logo1.png' %}">
+          
+        {% comment %} <div id="Store">
+          <a href="{% url 'mainstore' username=user.username %}">Store</a>
+        </div> {% endcomment %}
+        <div id="Signin">
+          <a href="{% url 'signin' %}">Signin</a>
+        </div>
+        <div id="Signup">
+          <a href="{% url 'signup' %}">Signup</a>
+        </div>
+    
+        <img  id="Screenshot_1757" src="{% static 'images/Flipup.png' %}">    
+        <img id="Screenshot_1756" src="{% static 'images/candle.png' %}">  
+        <img id="Screenshot_1758" src="{% static 'images/diary.png' %}"> 
+        <svg class="Rectangle_610">
+          <rect id="Rectangle_610" rx="0" ry="0" x="0" y="0" width="1280" height="500">
+          </rect>
+        </svg>
+        <div id="Our_purpose_is_to_provide_you_" class="fade-in">
+          <span>Our purpose is to provide you with simple tools that shall help you to relax and simplify your life and empower growth, lifestyle & wellness.</span><br/>
+        </div>
+        <svg class="Path_1431" viewBox="0 0 368 98.132">
+          <path id="Path_1431" d="M 4.433734893798828 0 L 363.5662841796875 0 C 366.0149536132813 0 368 2.13278341293335 368 4.763705253601074 L 368 93.36862182617188 C 368 95.99954223632813 366.0149536132813 98.13232421875 363.5662841796875 98.13232421875 L 4.433734893798828 98.13232421875 C 1.985050678253174 98.13232421875 0 95.99954223632813 0 93.36862182617188 L 0 4.763705253601074 C 0 2.13278341293335 1.985050678253174 0 4.433734893798828 0 Z">
+          </path>
+        </svg>
+        <div id="Go_to_Store" class="fade-in">
+          <a href="{% url 'signup' %}">Get Started</a>
+        </div>
+      </div>
+
+      <script>
+        const faders=document.querySelectorAll('.fade-in');
+
+const appearOptions={
+    threshold: 0.8,
+    
+};
+
+const appearOnScroll=new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry =>{
+        if(!entry.isIntersecting)
+        return;
+        else
+        {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    })
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
+</script>
+     </body>
+</html>

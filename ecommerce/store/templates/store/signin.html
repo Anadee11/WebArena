@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/signin.css' %}">
+<title>Sign-in</title>
+</head>
+<body>
+<div id="Sign-in">
+	<div id="Sign-in_g">
+		<span>Sign-in</span>
+	</div>
+	<img id="cool" src="{% static 'images/cool.png' %}">
+		
+		
+	<form id="Login" method="POST" actions="{% url 'signin' %}">
+        {% csrf_token %}
+		<div class="Rectangle_1">
+			<input type="text" id="username" name="username" class="forminput" placeholder="Username.." required>
+		</div>
+		<div class="Rectangle_2">
+			<input type="password" id="password" name="password" class="forminput" placeholder="Password..." required>
+			
+		</div>
+		<div id="Submit">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+
+	<div id="Not_a_member_yet_Signup_now">
+		<span>Not a member yet?</span><span><a href="{% url 'signup' %}"> Signup now</a></span>
+	</div>
+</div>
+</body>
+</html>
