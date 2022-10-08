@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/store.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script type="text/javascript">
+	var user = '{{request.user}}' 
+	function getToken(name) {
+	 let cookieValue = null;
+	 if (document.cookie && document.cookie !== '') {
+		 const cookies = document.cookie.split(';');
+		 for (let i = 0; i < cookies.length; i++) {
+			 const cookie = cookies[i].trim();
+			 // Does this cookie string begin with the name we want?
+			 if (cookie.substring(0, name.length + 1) === (name + '=')) {
+				 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+				 break;
+			 }
+		 }
+	 }
+	 return cookieValue;
+ }
+ const csrftoken = getToken('csrftoken');
+ </script>
+</head>
+<body>
+	<nav>
+<div id="Aesthetic_Town">
+	<svg class="Rectangle_610">
+		<rect id="Rectangle_610" rx="0" ry="0" x="0" y="0" width="1280" height="105">
+		</rect>
+	</svg>
+	<svg class="Line_1" viewBox="0 0 1227 1">
+		<path id="Line_1" d="M 0 0 L 1227 1">
+		</path>
+	</svg>
+	<a href="{% url 'cart' username=user.username %}">
+		<img  id="paper-bag" src="{% static 'images/paper-bag.png' %}">
+	</a>
+		
+	<svg class="Ellipse_177">
+		<ellipse id="Ellipse_177" rx="18.5" ry="18.5" cx="18.5" cy="18.5">
+		</ellipse>
+	</svg>
+	<div id="quant">
+		<p>{{cartItems}}</p>
+	</div>
+	<img id="Logo1" src="{% static 'images/Logo1.png' %}">
+		
+		
+	<div id="Hello_">
+		<span>Hello, {{user.username}}!</span>
+	</div>
+	<div id="Logout">
+		<a href="{% url 'logout' %}">Logout</a>
+	</div>
+</div>
+</nav>
+<div >
+	<br><br><br><br><br>
+</div>
+<div class="container">
+	{% block content %}
+	<div class="row">
+		{% for product in products %}
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{{product.imageURL}}">
+			<div class="box-element product">
+				<h6><strong>{{product.name}}</strong></h6>
+				<p>{{product.description}}</p>
+		<hr>
+		<button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+		<h5 style="display: inline-block; float: right"><strong>{{product.price|floatformat:2}}</strong></h5>
+			</div>
+		</div> 
+		{% endfor %}
+	</div>  
+	{% endblock content %}
+	<br>
+	
+</div>
+<section class="footer">
+	<h4>About</h4>
+	<p>Hello! Thank you for visiting my website. I hope you liked it ;)<br>Made by Siddhi Khade xoxo
+	</p>
+	
+</section>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="{% static 'JS/cart.js' %}"></script>
+</body>
+</html>

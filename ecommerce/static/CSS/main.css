@@ -1,0 +1,330 @@
+.mediaViewInfo {
+	--web-view-name: Aesthetic Town;
+	--web-view-id: Aesthetic_Town;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Aesthetic_Town;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+#Aesthetic_Town {
+	position: absolute;
+	width: 1280px;
+	height: 1148px;
+	background-color: rgba(172,163,163,1);
+	overflow: hidden;
+	--web-view-name: Aesthetic Town;
+	--web-view-id: Aesthetic_Town;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Line_1 {
+	fill: transparent;
+	stroke: rgba(239,225,225,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+	overflow: visible;
+	position: absolute;
+	width: 1227.003px;
+	height: 5px;
+	left: 26.5px;
+	top: 105px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_8 {
+	position: absolute;
+	width: 2667.731px;
+	height: 368.861px;
+	left: -627.865px;
+	top: 184px;
+	overflow: visible;
+}
+#Path_1429 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_1429 {
+	overflow: visible;
+	position: absolute;
+	width: 2668.448px;
+	height: 302.418px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_1430 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_1430 {
+	overflow: visible;
+	position: absolute;
+	width: 2122.973px;
+	height: 369.243px;
+	left: 285.492px;
+	top: 0.63px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_178 {
+	fill: rgba(177,151,147,1);
+}
+.Ellipse_178 {
+	position: absolute;
+	overflow: visible;
+	width: 658px;
+	height: 620px;
+	left: 729px;
+	top: 123px;
+}
+#Empowering_Growth {
+	left: 4px;
+	top: 250px;
+	position: absolute;
+	overflow: visible;
+	width: 795px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 65px;
+	color: rgba(255,255,255,1);
+}
+#Lifestyle__Wellness {
+	left: 6px;
+	top: 377px;
+	position: absolute;
+	overflow: visible;
+	width: 775px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 65px;
+	color: rgba(255,255,255,1);
+}
+#img {
+	position: absolute;
+	width: 394px;
+	height: 394px;
+	left: 848px;
+	top: 218px;
+	overflow: visible;
+}
+#logo {
+	position: absolute;
+	width: 347px;
+	height: 81px;
+	left: 27px;
+	top: 14px;
+	overflow: visible;
+}
+#Store a{
+	left: 848px;
+	top: 35px;
+	position: absolute;
+	overflow: visible;
+	width: 116px;
+	height: 30px;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	transition: ease-in;
+}
+
+#Store a:hover, #Signin a:hover, #Signup a:hover{
+	font-size: 33px;
+	transition: 0.5s;
+}
+
+#Signin a {
+	left: 991px;
+	top: 35px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 30px;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+#Signup a{
+	left: 1134px;
+	top: 35px;
+	position: absolute;
+	overflow: visible;
+	width: 135px;
+	height: 30px;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+#paper-bag {
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	left: 1171px;
+	top: 22px;
+	overflow: visible;
+}
+
+#paper-bag:hover{
+	width: 69px;
+	height: 69px;
+	transition: 0.5s;
+}
+
+#Screenshot_1757 {
+	position: absolute;
+	width: 376px;
+	height: 498px;
+	left: 904px;
+	top: 652px;
+	overflow: visible;
+}
+#Screenshot_1756 {
+	position: absolute;
+	width: 488px;
+	height: 499px;
+	left: 1px;
+	top: 651px;
+	overflow: visible;
+}
+#Screenshot_1758 {
+	position: absolute;
+	width: 415px;
+	height: 498px;
+	left: 489px;
+	top: 652px;
+	overflow: visible;
+}
+#Rectangle_610 {
+	opacity: 0.43;
+	fill: rgba(80,73,73,1);
+}
+.Rectangle_610 {
+	position: absolute;
+	overflow: visible;
+	width: 1280px;
+	height: 500px;
+	left: 0px;
+	top: 652px;
+}
+#Our_purpose_is_to_provide_you_ {
+	left: 128px;
+	top: 704px;
+	position: absolute;
+	overflow: hidden;
+	width: 1025px;
+	height: 197px;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	color: rgba(255,255,255,1);
+}
+#Path_1431 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_1431 {
+	overflow: visible;
+	position: absolute;
+	width: 368px;
+	height: 98.132px;
+	left: 456px;
+	top: 959.434px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Go_to_Store a{
+	left: 503px;
+	top: 991px;
+	position: absolute;
+	overflow: visible;
+	width: 275px;
+	height: 35px;
+	text-align: center;
+	font-family: Sitka Text;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+#Go_to_Store a:hover{
+	font-size: 38px;
+	transition: 1s;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.footer1{
+	margin-top: 600px;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(rgba(25, 30, 49, 0.7),rgba(25, 30, 49, 0.7));
+}
+
+.footer p{
+    color: darkgray;
+}
+.footer h4{
+    color: snow;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}

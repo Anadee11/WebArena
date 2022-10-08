@@ -1,0 +1,139 @@
+.mediaViewInfo {
+    --web-view-name: Sign-in;
+    --web-view-id: Sign-in;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Sign-in;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Sign-in {
+    position: absolute;
+    width: 1280px;
+    height: 640px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Sign-in;
+    --web-view-id: Sign-in;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Sign-in_g {
+    left: 923px;
+    top: 107px;
+    position: absolute;
+    overflow: visible;
+    width: 255px;
+    height: 67px;
+    text-align: left;
+    font-family: Ravie;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(192,27,93,1);
+}
+#cool {
+    position: absolute;
+    width: 853px;
+    height: 640px;
+    left: -37px;
+    top: 0px;
+    overflow: visible;
+}
+#Screenshot__1544_-removebg-pre {
+    position: absolute;
+    width: 145px;
+    height: 105px;
+    left: -10px;
+    top: 0px;
+    overflow: visible;
+}
+
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    left: 860px;
+    top: 212px;
+}
+
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 378px;
+    height: 53px;
+    left: 860px;
+    top: 314px;
+}
+
+.Rectangle_1 input, .Rectangle_2 input{
+    width: 378px;
+    height: 53px;
+	align-items: center;
+	padding-left: 15px;
+	font-size: 17px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#Submit input{
+    left: 860px;
+    top: 432px;
+    position: absolute;
+    overflow: visible;
+    width: 378px;
+    height: 53px;
+    text-align: center;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(104,182,150,1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Not_a_member_yet_Signup_now {
+    left: 882px;
+    top: 499px;
+    position: absolute;
+    overflow: visible;
+    width: 336px;
+    height: 35px;
+    text-align: left;
+    font-family: Segoe Print;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+
+#Not_a_member_yet_Signup_now a{
+    text-decoration: none;
+    color: rgba(14,211,72,1);
+}
+
+#Not_a_member_yet_Signup_now a:hover{
+    color: rgb(10, 151, 52);
+}
+
+.formlabel{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75px;
+    transition: top .3s ;
+    padding: 0 5px;
+    color: rgb(146,146,146);
+}
+.forminput:focus~.formlabel,.forminput:not(:placeholder-shown).forminput:not(:focus)~.formlabel{
+    top: -9px;
+    background-color: white;
+    color: black;
+}
