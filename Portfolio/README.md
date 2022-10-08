@@ -1,5 +1,5 @@
 
-# Tic-Tac-Toe
+# Portfolio Website
 This is a  portfolio website developed in HTML, CSS and JavaScript.
 The website was made by me for Frontend practice in my initial phase with the help of tutorials.
 
