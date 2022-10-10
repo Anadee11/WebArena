@@ -1,0 +1,53 @@
+.nav{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.options{
+    margin: 15px 5px;
+}
+.options li a{
+    font-size: 1rem;
+    padding: 0 5px;
+}
+.gayab{
+    display: none;
+}
+.btn{
+    margin: 5px 2px;
+}
+#home{
+    height: 650px;
+    margin: 5px 2px;
+    padding: 1px 5px;
+}
+#home::before{
+    height: 120%;
+}
+.name{
+    display: none;
+}
+#service{
+    height: 1500px;
+    margin: 40px 29px;
+}
+.bigbox{
+    flex-direction: column;
+}
+.clientLogo{
+    margin: 0;
+    padding: 0 4px;
+}
+
+.client img{
+    height: 50px;
+}
+
+.client{
+    flex-wrap: wrap;
+}
+
+.contactForm{
+    width: 350px;
+    height: 260px;
+}

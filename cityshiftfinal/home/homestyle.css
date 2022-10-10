@@ -1,0 +1,194 @@
+a {
+  color: inherit!important;
+}
+
+a i {
+  color: gray !important;
+}
+
+.menu a {
+  color:#16a085!important;
+}
+
+.menu .nav-link{
+ padding-right: 0px!important;
+}
+
+img{
+  width: 100%;
+}
+
+.main {
+  background-image: url(images/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.main i {
+  color: #f1c40f!important;
+}
+
+.main .jumbotron, .second .jumbotron, .six .jumbotron{
+  background-color: transparent!important;
+}
+
+.text {
+  background-color: rgba(44, 62, 80, 0.8);
+  color: white;
+}
+
+.main .text{
+  width: 50%;
+  border: 1px solid #7f8c8d;
+}
+
+.modal{
+  color:gray!important;
+}
+
+.third .col-lg-3 {
+  margin-top: -30px;
+  padding-right: 0!important;
+ padding-left: 0 !important;
+}
+
+.third img{
+  opacity: 0.7;
+}
+
+.local {
+  background-image: url(images/8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.local2 {
+  background-image: url(images/9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.four.jumbotron{
+padding: 0!important
+}
+
+.four .text1{
+  padding: 3%;
+}
+
+.second {
+  background-image: url(images/houses.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  margin-top: -30px;
+  color: white;
+}
+
+.six {
+  background-image: url(images/10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  color: white;
+}
+
+.six .col-12{
+  margin-left: 8%;
+}
+
+.five h3, .how h3, .how h4, .how h5, .steps h3{
+  color: #4a9375!important;
+}
+
+.how .jumbotron{
+  background-color: #fdf9f8!important;
+}
+
+.how {
+  background-color: transparent!important;
+}
+
+.steps {
+ background-image: url(images/steps/center.png);
+ height: 1178px;
+ background-size:cover;
+ background-repeat: no-repeat;
+}
+
+.map{
+  background-image: url(images/map.png);
+  min-height: 1000px;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.name {
+  padding: 1%;
+  background-color: rgba(70, 140, 104, 0.5);
+  color: white;
+  text-align: center;
+}
+.map .card{
+  background-color: rgba(0,0,0, 0.0) !important;
+}
+
+.seven.row .col-lg-3{
+  padding:0!important;
+}
+.seven .jumbotron{
+  background-color: transparent!important;.seven .row
+}
+.form-inline label{
+  padding: 2%;
+}
+
+.form-inline button {
+  margin: 10px;;
+}
+
+.five .col-lg-6{
+  padding-right: 0!important;
+   padding-left: 0!important;
+}
+
+.how {
+  background-image: url(images/19.jpeg);
+  background-position: center;
+  min-height: 400px;
+  background-repeat: no-repeat;
+}
+
+.about_place{
+  background-color: rgba(235, 236, 238, 0.9);
+  padding: 5%;
+  text-align: justify;
+  font-size: 14px;
+  color:black;
+}
+
+.subsribe{
+  background-image: url(images/end.jpg);
+  background-position: cover;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.subsribe button{
+  background-color: #efb50b;
+  color: white;
+}
+
+.subsribe .input-group.mb-3{
+  width:50%;
+}
+
+
+@media only screen and (max-width: 1000px){
+  .steps {
+    display: none;
+  }
+}
