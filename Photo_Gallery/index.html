@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO GALLERY</title>
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<div class="gallery">
+    <div class="header">
+        <h1>PHOTO GALLERY</h1>
+       
+       </div>
+       <hr/>
+
+    <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="random">Random</li>
+        <li class="buttons" data-filter="places">Places</li>
+        <li class="buttons" data-filter="anime">Anime</li>
+        <li class="buttons" data-filter="flowers">Flowers</li>
+        <li class="buttons" data-filter="wallpaper">Wallpaper</li>
+    </ul>
+
+    <div class="image-container">
+        	
+
+        <a href="images/i6.jpg" class="image random">
+            <img src="images/i6.jpg" alt="">
+        </a>
+        <a href="images/i7.jpg" class="image random">
+            <img src="images/i7.jpg" alt="">
+        </a>
+        <a href="images/i8.webp" class="image random">
+            <img src="images/i8.webp" alt="">
+        </a>
+        <a href="images/i9.jpg" class="image random">
+            <img src="images/i9.jpg" alt="">
+        </a>
+        <a href="images/i10.jpg" class="image random">
+            <img src="images/i10.jpg" alt="">
+        </a>
+        <a href="images/i11.jpg" class="image random">
+            <img src="images/i11.jpg" alt="">
+        </a>
+        <a href="images/i12.jpg" class="image random">
+            <img src="images/i12.jpg" alt="">
+        </a>
+        <a href="images/i13.jpg" class="image random">
+            <img src="images/i13.jpg" alt="">
+        </a>
+        <a href="images/i14.webp" class="image random">
+            <img src="images/i4.jpg" alt="">
+        </a>
+        <a href="images/i15.webp" class="image random">
+            <img src="images/i15.webp" alt="">
+        </a>
+        <a href="images/i16.jpg" class="image random">
+            <img src="images/i16.jpg" alt="">
+        </a>
+
+
+        <a href="images/i29.jpg" class="image places">
+            <img src="images/i29.jpg" alt="">
+        </a>
+        <a href="images/i30.jpg" class="image places">
+            <img src="images/i30.jpg" alt="">
+        </a>
+        <a href="images/i31.jpg" class="image places">
+            <img src="images/i12.jpg" alt="">
+        </a>
+        <a href="images/cake4.jpg" class="image places">
+            <img src="images/i31.jpg" alt="">
+        </a>
+        <a href="images/i32.jpg" class="image places">
+            <img src="images/i32.jpg" alt="">
+        </a>
+        
+
+        <a href="images/i26.jpg" class="image anime">
+            <img src="images/i26.jpg" alt="">
+        </a>
+        <a href="images/i27.jpg" class="image anime">
+            <img src="images/i27.jpg" alt="">
+        </a>
+        <a href="images/i28.jpg" class="image anime">
+            <img src="images/i28.jpg" alt="">
+        </a>
+        <a href="images/i1.jpg" class="image flowers">
+            <img src="images/i1.jpg" alt="">
+        </a>
+        <a href="images/i2.jpg" class="image flowers">
+            <img src="images/i2.jpg" alt="">
+        </a>
+        <a href="images/i3.jpg" class="image flowers">
+            <img src="images/i3.jpg" alt="">
+        </a>
+        <a href="images/i4.jpg" class="image flowers">
+            <img src="images/i4.jpg" alt="">
+        </a>
+        <a href="images/i5.jpg" class="image flowers">
+            <img src="images/i5.jpg" alt="">
+        </a>
+
+        <a href="images/i19.jpg" class="image wallpaper">
+            <img src="images/i19.jpg" alt="">
+        </a>
+        <a href="images/i20.jpg" class="image wallpaper">
+            <img src="images/i20.jpg" alt="">
+        </a>
+        <a href="images/i21.webp" class="image wallpaper">
+            <img src="images/i21.webp" alt="">
+        </a>
+        <a href="images/i23.jpg" class="image wallpaper">
+            <img src="images/i23.jpg" alt="">
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(400);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(400);
+        }
+
+    });
+
+    $('.gallery').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+</script>
+    
+</body>
+</html>
