@@ -1,0 +1,241 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	display: grid;
+	position: inherit;
+	font-family: "Roboto Mono", sans-serif;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 2px solid rgba(177, 177, 177, 0.18);
+	border-radius: 40px;
+	padding: 100px 20px;
+	max-width: 100%;
+	align-items: center;
+	justify-content: center;
+	width: 80vw;
+	text-align: center;
+	border-color: rgba(176, 176, 176, 0.5);
+	transition: all 0.5s ease-in-out;
+	margin-top: 1rem;
+}
+
+h3 {
+	margin: 250;
+	letter-spacing: 10px;
+	opacity: 5;
+}
+
+.joke {
+	font-size: 30px;
+	line-height: 40px;
+	margin: 50px auto;
+	font-weight: normal;
+	max-width: 600px;
+
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+
+	font-size: 1.5em;
+	line-height: 2rem;
+	margin: 50px auto;
+	max-width: 600px;
+}
+
+.btn {
+	background-color: #9f68e0;
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 20px 80px;
+	margin-top: 50px;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+	background-color: #83ddd7;
+	color: black;
+  font-weight: bold;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+/* copy button */
+.copy_btn {
+	padding: 18px 20px;
+	margin-left: 10px;
+}
+.fade-in-image {
+	background: url(copied.png);
+	width: 60vh;
+	height: 50vh;
+	margin: auto;
+	background-size: cover;
+	position: absolute;
+	z-index: 1;
+	top: 20%;
+	left: 30%;
+	right: 30%;
+}
+
+.toggle {
+	width: 4rem;
+	height: 4rem;
+	background-color: #fcee4e;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.toggle span {
+	font-size: 2rem;
+	color: #111;
+}
+
+.toggle span:hover {
+	font-size: 2.1rem;
+	color: rgb(41, 40, 40);
+}
+
+/* Dark mode styling*/
+body.dark {
+	background-color: #262626;
+	color: #ffffff;
+}
+
+body.dark .container {
+	background-color: rgba(21, 29, 29, 0.55);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-color: transparent;
+}
+
+body.dark .toggle {
+	background-color: #323232;
+	box-shadow: rgba(33, 34, 33, 0.89) 0px 25px 50px -12px;
+}
+
+body.dark .toggle span {
+	color: #fcee4e;
+}
+
+body.dark.toggle i:hover {
+	font-size: 2.1rem;
+	color: rgb(41, 40, 40);
+}
+
+body.dark .btn {
+	background-color: #111;
+	box-shadow: 0 5px 15px rgba(255, 253, 253, 0.774),
+		0 6px 6px rgba(0, 0, 0, 0, 0.1);
+	color: rgb(255, 255, 255);
+}
+
+body.dark .btn:hover {
+	background-color: #83ddd7;
+	color: rgb(0, 0, 0);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
+}
+
+body.dark .lds-ring div {
+	border-color: #fff transparent transparent transparent;
+}
+
+/* Loading Spinner */
+.lds-ring {
+	visibility: hidden;
+	width: 40px;
+	height: 40px;
+}
+
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	margin: 4px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #262626 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		background: rgba(255, 255, 255, 0.25);
+		border-radius: 10px;
+		padding: 15px 15px;
+		max-width: 100%;
+		display: grid;
+		position: absolute;
+		align-items: center;
+		text-align: center;
+		margin: 20px 35px;
+	}
+
+	.toggle {
+		width: 4rem;
+		height: 4rem;
+		background-color: #fcee4e;
+		position: initial;
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
+
+.heading {
+	font-weight: bold;
+}
